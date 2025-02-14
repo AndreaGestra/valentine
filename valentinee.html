@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffccd5;
+            text-align: center;
+            padding: 50px;
+            color: black;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 90%;
+        }
+        h1 {
+            color: black;
+        }
+        p {
+            font-size: 18px;
+            color: black;
+        }
+        .heart {
+            color: red;
+            font-size: 30px;
+        }
+        #gallery, #tic-tac-toe, #final-message {
+            display: none;
+            margin-top: 20px;
+        }
+        #gallery img {
+            width: 80%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: white;
+            border: 2px solid #d63384;
+            cursor: pointer;
+            flex-direction: column;
+            color: black;
+        }
+        input.cell-input {
+            width: 90%;
+            height: 50%;
+            text-align: center;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            display: block;
+            margin: auto;
+            color: black;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px auto;
+            display: block;
+        }
+        button:hover {
+            background-color: #a82666;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "elsabocilll") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Masa gatau sihhh! Coba tebakk.");
+            }
+        }
+        
+        function showGallery() {
+            document.getElementById("message").style.display = "none";
+            document.getElementById("gallery").style.display = "block";
+        }
+        
+        function showTicTacToe() {
+            document.getElementById("gallery").style.display = "none";
+            document.getElementById("tic-tac-toe").style.display = "block";
+        }
+        
+        function showFinalMessage() {
+            document.getElementById("tic-tac-toe").style.display = "none";
+            document.getElementById("final-message").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div id="login" class="card">
+        <h1>Haloo cantikkk</h1>
+        <input type="password" id="password" placeholder="Masukkan password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <div id="content" style="display: none;">
+        <div id="message" class="card">
+            <h1>Selamat Hari Valentine Elsaaaa! <span class="heart">❤️</span></h1>
+            <p>Semoga hari ini penuh dengan cinta, kebahagiaan, dan tawa.</p>
+            <p>Semoga elsa juga bahagia selaluu.</p>
+            <p>Aku sayang Elsaaa!</p>
+            <button onclick="showGallery()">Lanjut</button>
+        </div>                                                             
+        
+        <div id="gallery">
+            <h2>Foto Bocilll</h2>
+            <img src="https://www.dropbox.com/scl/fi/dywlz2czyqs8rtgwb2qla/WhatsApp-Image-2025-02-14-at-15.55.27.jpeg?rlkey=2rv8ktv176yeesnyxrfy7fj0z&st=mww1txo3&dl=1" alt="Foto 1">
+            <img src="https://www.dropbox.com/scl/fi/c095u9p18ivwhm7v05jje/WhatsApp-Image-2025-02-14-at-15.55.38.jpeg?rlkey=j3uo6wix0brm754cs4s63xgrh&st=hlhpaqqk&dl=1" alt="Foto 2">
+            <img src="https://www.dropbox.com/scl/fi/l0wjkturoc88wn08i4atr/WhatsApp-Image-2025-02-14-at-15.55.39.jpeg?rlkey=3pmtsetmszhvwid2lwjx48ghb&st=2bidseat&dl=1" alt="Foto 3">
+            <img src="https://www.dropbox.com/scl/fi/entv5ljo3yra79jzcsecb/WhatsApp-Image-2025-02-14-at-15.55.38-2.jpeg?rlkey=q9u9begmhk7j8shn5h9jputha&st=4u6desu8&dl=1" alt="Foto 4">
+            <img src="https://www.dropbox.com/scl/fi/ipv2zinfd82zoyuhap40m/WhatsApp-Image-2025-02-14-at-15.55.38-1.jpeg?rlkey=ca2d9gn3w88ysf08w1c3jap3s&st=svafobdc&dl=1" alt="Foto 5">
+            <img src="https://www.dropbox.com/scl/fi/6e9wqt0wcfddkxkwi192u/Screenshot_20250212_093836_WhatsApp.jpg?rlkey=v04du4iagvof2rqrglfihu81f&st=raam46cb&dl=1" alt="Foto 6">
+            <img src="https://www.dropbox.com/scl/fi/8pkmtsbfquk7hy18oqtlw/Screenshot_20250121_222845_WhatsApp.jpg?rlkey=kt5mhmdxv677a5xr76s1fge9h&st=yl8ffn6d&dl=1" alt="Foto 7">
+            <img src="https://www.dropbox.com/scl/fi/xrel55khzy68e6fs7ijqg/20250211_171305.jpg?rlkey=8g7nsakn2jfh4ihf5w8gst8tb&st=5gdjjb2o&dl=1" alt="Foto 8">
+            <img src="https://www.dropbox.com/scl/fi/nqldz1dpcn5ecuvxtwtmj/20250209_213448.jpg?rlkey=fx0261f6pqi8jel8drt83ufvt&st=h22l80t3&dl=1" alt="Foto 9">
+            <img src="https://www.dropbox.com/scl/fi/de760trg5vp7iljcjumud/20250126_053314.jpg?rlkey=klv9tusqr9ipcqa48z4mesaun&st=3dxxt1z6&dl=1" alt="Foto 10">
+            <img src="https://www.dropbox.com/scl/fi/idc5t9hotyg1bh47k7cnc/20250209_125308.jpg?rlkey=onxyktke6ip2sdfab09lmist6&st=luyamtnq&dl=1" alt="Foto 10">
+            <img src="https://www.dropbox.com/scl/fi/xnzhr3lvtpwlkdnz9w8ul/20250126_045920.jpg?rlkey=32luz2cwrxlrq16bn9dz4zn3d&st=q6xr18dv&dl=1" alt="Foto 10">
+            <img src="https://www.dropbox.com/scl/fi/5e30ar2y6oxfgrws7jqhs/WhatsApp-Image-2025-02-14-at-15.55.42-1.jpeg?rlkey=nt212eluyht27tb4djgaoybfi&st=otdhfa7a&dl=1" alt="Foto 10">
+            <img src="https://www.dropbox.com/scl/fi/ftls4cm477cywoo2jslo9/20250211_180828.jpg?rlkey=0bby76pfu00hp5aj2wjr7ypmw&st=974vp3eb&dl=1" alt="Foto 10">
+            <img src="https://www.dropbox.com/scl/fi/kmwew4tp1j8tmwkzc3x1g/IMG_20250131_204850_815.webp?rlkey=sg9d9yl8sitmj2uoete829nzo&st=ngw9jjr4&dl=1" alt="Foto 10">
+            <button onclick="showTicTacToe()">Lanjut</button>
+        </div>
+        
+        <div id="tic-tac-toe" class="card">
+            <h2>Kamu Pemenang Hatiku 💖</h2>
+            <div class="grid">
+                <div class="cell">X</div>
+                <div class="cell"><input type="text" class="cell-input" placeholder="I"></div>
+                <div class="cell">O</div>
+                <div class="cell">O</div>
+                <div class="cell">X</div>
+                <div class="cell"><input type="text" class="cell-input" placeholder="LOVE"></div>
+                <div class="cell"><input type="text" class="cell-input" placeholder="YOU"></div>
+                <div class="cell">O</div>
+                <div class="cell">X</div>
+            </div>
+            <button onclick="showFinalMessage()">Lanjut</button>
+        </div>
+        
+        <div id="final-message" class="card">
+            <h1>I Love You! 💖</h1>
+            <p>Lagu untuk elsaaaa:</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zOhyrGvtnXqym9aprEDzK?utm_source=generator" width="300" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+    </div>
+</body>
+</html>
